@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true, maxlen:120 */
+/*global browser:true, console:true, \$:true, _:true, Backbone:true, Handlebars:true, require:true, define:true */
+
+define(
+	[
+		'${1:namespace}/model/BaseModel'
+	],
+
+	function (BaseModel) {
+		'use strict';
+		
+		var ${2:Name}Model = BaseModel.extend({
+			${3:// Implementation}
+		});
+
+		return ${2:Name}Model;
+	}
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>model</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+</snippet>
