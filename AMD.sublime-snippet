@@ -1,7 +1,6 @@
 <snippet>
 	<content><![CDATA[
-/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true, maxlen: 120*/
-/*global browser:true, \$:true, _:true, Backbone:true, Handlebars:true, require:true, define:true*/
+$TM_HINT_SETTINGS
 
 define(
 	[

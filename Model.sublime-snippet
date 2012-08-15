@@ -1,7 +1,6 @@
 <snippet>
 	<content><![CDATA[
-/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true, maxlen:120 */
-/*global browser:true, console:true, \$:true, _:true, Backbone:true, Handlebars:true, require:true, define:true */
+$TM_HINT_SETTINGS
 
 define(
 	[
@@ -11,11 +10,11 @@ define(
 	function (BaseModel) {
 		'use strict';
 		
-		var ${2:Name}Model = BaseModel.extend({
-			${3:// Implementation}
+		var ${TM_FILENAME/\..*?$//} = BaseModel.extend({
+			$3
 		});
 
-		return ${2:Name}Model;
+		return ${TM_FILENAME/\..*?$//};
 	}
 );
 ]]></content>

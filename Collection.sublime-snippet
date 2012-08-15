@@ -1,22 +1,22 @@
 <snippet>
 	<content><![CDATA[
-/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true */
-/*global browser:true, console:true, \$:true, _:true, Backbone:true, Handlebars:true, require:true, define:true */
+$TM_HINT_SETTINGS
 
 define(
 	[
-		'plex/model/collections/BaseCollection',
-		'plex/model/$1Model'
+		'${1:namespace}/model/collections/BaseCollection',
+		'${1:namespace}/model/${2:Name}Model'
 	],
 
-	function (BaseCollection, ServerModel) {
+	function (BaseCollection, ${2:Name}Model) {
 		'use strict';
 		
-		var $1Collection = BaseCollection.extend({
-			model: $1Model
+		var ${TM_FILENAME/\..*?$//} = BaseCollection.extend({
+			model: ${2:Name}Model
+			$3
 		});
 
-		return $1Collection;
+		return ${TM_FILENAME/\..*?$//};
 	}
 );
 ]]></content>

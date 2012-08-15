@@ -1,12 +1,11 @@
 <snippet>
 	<content><![CDATA[
-/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true */
-/*global browser:true, console:true, \$:true, _:true, Backbone:true, Handlebars:true, require:true, define:true */
+$TM_HINT_SETTINGS
 
 define(
 	[
-		'text!templates/$2$1.tpl',
-		'plex/view/BaseView',
+		'text!templates/${TM_FILENAME/\..*?$//}.tpl',
+		'${1:namespace}/view/BaseView',
 
 		// Globals
 		'handlebars'
@@ -14,17 +13,15 @@ define(
 
 	function (template, BaseView) {
 		'use strict';
-
-		var tpl = Handlebars.compile(template);
 		
-		var $1 = BaseView.extend({
+		var ${TM_FILENAME/\..*?$//} = BaseView.extend({
 
 			//
 			// -------------------- Init --------------------
 			//
 
 			initialize: function () {
-				$3
+				$2
 			},
 
 
@@ -33,13 +30,13 @@ define(
 			//
 
 			render: function () {
-				this.\$el.html(tpl());
+				this.\$el.html(template());
 
 				return this;
 			}
 		});
 
-		return $1;
+		return ${TM_FILENAME/\..*?$//};
 	}
 );
 ]]></content>
