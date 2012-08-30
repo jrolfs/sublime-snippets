@@ -14,8 +14,9 @@
                 <key>name</key>
                 <string>TM_HINT_SETTINGS</string>
                 <key>value</key>
-                <string><![CDATA[/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true, maxlen: 120*/
-/*global browser:true, console:true, $:true, _:true, Backbone:true, Handlebars:true, require:true, define:true*/]]></string>
+                <string><![CDATA[/*jshint strict:true, undef:true, noarg:true, immed:true, trailing:true, expr:true, maxlen:120*/
+/*global browser:true, console:true, $:true, _:true, Backbone:true, Handlebars:true, Modernizr:true,
+require:true, define:true*/]]></string>
             </dict>
         </array>
     </dict>
