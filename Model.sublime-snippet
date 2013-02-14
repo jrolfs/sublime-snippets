@@ -17,6 +17,7 @@ define(
 		return ${TM_FILENAME/\..*?$//};
 	}
 );
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>model</tabTrigger>

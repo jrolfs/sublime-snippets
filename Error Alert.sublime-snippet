@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+var error;
+try { error = JSON.parse(response.responseText).error; } catch (e) {}
+
+dispatcher.trigger('command:ShowAlert', {
+    icon: '${1:icon}',
+    message: '${2:message}' + (error ? ' · ' + error : '')
+});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>erralert</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
