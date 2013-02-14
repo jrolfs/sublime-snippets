@@ -4,7 +4,7 @@ $TM_HINT_SETTINGS
 
 define(
 	[
-		'${1:namespace}/model/BaseModel'
+		'${1:namespace}/model/${2}BaseModel'
 	],
 
 	function (BaseModel) {
