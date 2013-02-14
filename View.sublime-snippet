@@ -4,7 +4,7 @@ $TM_HINT_SETTINGS
 
 define(
 	[
-		'hb!templates/${2}${TM_FILENAME/\..*?$//}.tmpl',
+		'hbs!templates/${2}${TM_FILENAME/\..*?$//}.tmpl',
 		'${1:namespace}/${2}view/BaseView',
 
 		// Globals
