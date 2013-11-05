@@ -1,7 +1,5 @@
 <snippet>
 	<content><![CDATA[
-$TM_HINT_SETTINGS
-
 define(
 	[
 		'${1:namespace}/model/collections/BaseCollection',
@@ -10,7 +8,7 @@ define(
 
 	function (BaseCollection, ${2:Name}Model) {
 		'use strict';
-		
+
 		var ${TM_FILENAME/\..*?$//} = BaseCollection.extend({
 			model: ${2:Name}Model
 			$3

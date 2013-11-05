@@ -1,7 +1,5 @@
 <snippet>
 	<content><![CDATA[
-$TM_HINT_SETTINGS
-
 define(
 	[
 		'hbs!templates/${2}${TM_FILENAME/\..*?$//}.tmpl',
@@ -13,7 +11,7 @@ define(
 
 	function (template, BaseView) {
 		'use strict';
-		
+
 		var ${TM_FILENAME/\..*?$//} = BaseView.extend({
 
 			//

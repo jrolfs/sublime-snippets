@@ -1,7 +1,5 @@
 <snippet>
     <content><![CDATA[
-$TM_HINT_SETTINGS
-
 define(
     [
         '${1:namespace}/model/AppModel',
