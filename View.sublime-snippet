@@ -3,16 +3,16 @@
 define(
 	[
 		'hbs!templates/${2}${TM_FILENAME/\..*?$//}.tmpl',
-		'${1:namespace}/${2}view/BaseView',
+		'${1:namespace}/view/${3}/${4:BaseView}',
 
 		// Globals
 		'handlebars'
 	],
 
-	function (template, BaseView) {
+	function (template, ${4:BaseView}) {
 		'use strict';
 
-		var ${TM_FILENAME/\..*?$//} = BaseView.extend({
+		var ${TM_FILENAME/\..*?$//} = ${4:BaseView}.extend({
 
 			//
 			// -------------------- Init --------------------
