@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+class Mavenlink.Features.${1:Feature}.Layouts.${2:ClassName} extends ${3:Mavenlink.Layout}
+  template: 'backbone/features/${4:feature}/templates/layouts/${5:template}'
+  className: ''
+  ${6:regions:
+    ${7:region}: '${8:region-selector}'}
+
+  events: {}
+
+  onRender: ->
+    ${9}
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>layout</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.coffee</scope>
+</snippet>
+  
